@@ -18,12 +18,13 @@ O processo de colagem é repetido para as primeiras 8 células da coluna selecio
 
 # Para instalar as bibliotecas necessárias
 
->tkinter
+1-tkinter
+>pip install tk
 
-1-openpyxl:
+2-openpyxl:
 >pip install openpyxl
 
-2-pyautogui:
+3-pyautogui:
 >pip install pyautogui
 
 
