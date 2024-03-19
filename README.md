@@ -2,11 +2,7 @@
 
 O usuário pode clicar no botão "Selecionar" para abrir uma janela de diálogo e escolher um arquivo Excel (.xlsx ou .xls).
 
-Entrada da Coluna:
-
 O usuário pode inserir o número da coluna ou sua letra na entrada designada.
-
-Extração e Colagem dos Dados:
 
 Os dados da coluna selecionada são extraídos do arquivo Excel escolhido.
 
