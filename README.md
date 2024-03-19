@@ -1,5 +1,7 @@
 # Projeto AutoTag
 
+Este código Python apresenta uma aplicação GUI (Interface Gráfica do Usuário) desenvolvida com o módulo tkinter para extrair dados de uma planilha do Excel e colá-los em outro local.
+
 O usuário pode clicar no botão "Selecionar" para abrir uma janela de diálogo e escolher um arquivo Excel (.xlsx ou .xls).
 
 O usuário pode inserir o número da coluna ou sua letra na entrada designada.
