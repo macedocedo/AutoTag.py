@@ -18,9 +18,6 @@ O processo de colagem é repetido para as primeiras 8 células da coluna selecio
 
 Além disso, para facilitar a localização, foi implementado um rastreador de coordenadas do mouse. 
 
-Código para auxiliar na localização de coordenadas.
->Rastromouse
-
 # Para instalar as bibliotecas necessárias
 
 1-tkinter
@@ -31,6 +28,9 @@ Código para auxiliar na localização de coordenadas.
 
 3-pyautogui:
 >pip install pyautogui
+
+>Código para auxiliar na localização de coordenadas.
+>Rastromouse
 
 
 
