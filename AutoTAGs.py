@@ -53,7 +53,7 @@ def paste_from_excel():
 
 # Janela principal
 root = tk.Tk()
-root.title("Paste from Excel")
+root.title("AutoTAGs")
 
 # Layout da interface gráfica
 excel_file_label = tk.Label(root, text="Arquivo Excel:")
