@@ -27,7 +27,7 @@ Além disso, para facilitar a localização, foi implementado um rastreador de c
 3-pyautogui:
 >pip install pyautogui
 
->Código para auxiliar na localização de coordenadas.
+4-Código para auxiliar na localização de coordenadas.
 >Rastromouse
 
 
