@@ -28,11 +28,11 @@ def paste_from_excel():
             column_index = int(selected_column)
 
         # Coordenadas fixas
-        x_coord = 1381
+        x_coord = 1311
         y_coord = 178
 
-        x1_coord = 1355
-        y1_coord = 367
+        x1_coord = 1263
+        y1_coord = 376
 
         pyautogui.click(x_coord, y_coord, duration=0.3)
         sleep(0.5)
