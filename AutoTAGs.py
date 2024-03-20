@@ -28,28 +28,32 @@ def paste_from_excel():
             column_index = int(selected_column)
 
         # Coordenadas fixas
-        x_coord = 941
-        y_coord = 591
-        newY_coord = 1213  # Nova coordenada para escrita
+        x_coord = 1381
+        y_coord = 178
+
+        x1_coord = 1355
+        y1_coord = 367
+
+        pyautogui.click(x_coord, y_coord, duration=0.3)
+        sleep(0.5)
 
         column_count = 0  # Contador para controlar o número de colunas processadas
 
-        for row in range(1, num_rows + 1): # Coleta linhas e aplica no local
+        for row in range(1, num_rows + 1):  # Coleta linhas e aplica no local
             cell_value = sheet.cell(row=row, column=column_index).value
-            pyautogui.click(x_coord, y_coord, duration=0.3)
+            pyautogui.click(x1_coord, y1_coord, duration=0.3)  # clique adicional após a escrita
             pyautogui.write(str(cell_value))
-            pyautogui.click(newY_coord)  # Novo click para avançar para próxima célula
+            pyautogui.press('enter')  # Simular pressionar Enter
             sleep(0.5)
 
             column_count += 1  # Incrementa o contador de colunas processadas
             if column_count >= 8:  # Interrompe o loop após processar 8 colunas
                 break
 
-        workbook.close() #Retorno do loop
+        workbook.close()  # Retorno do loop
         status_label.config(text="Colagem concluída!", fg="green")
     except Exception as e:
         status_label.config(text=f"Erro: {str(e)}", fg="red")
-
 
 # Janela principal
 root = tk.Tk()
