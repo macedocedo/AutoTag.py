@@ -90,7 +90,7 @@ root.config(bg='#EDEDED')
 excel_file_label = tk.Label(root, text="Arquivo Excel:")
 excel_file_label.grid(row=0, column=0, padx=5, pady=5)
 
-excel_file_entry = tk.Entry(root, width=70)
+excel_file_entry = tk.Entry(root, width=60)
 excel_file_entry.grid(row=0, column=1, padx=5, pady=5)
 
 select_button = tk.Button(root, text="Selecionar", command=select_excel_file)
@@ -99,7 +99,7 @@ select_button.grid(row=0, column=2, padx=5, pady=5)
 filter_label = tk.Label(root, text="Filtro:")
 filter_label.grid(row=1, column=0, padx=5, pady=5)
 
-filter_entry = tk.Entry(root, width=30)
+filter_entry = tk.Entry(root, width=60)
 filter_entry.grid(row=1, column=1, padx=5, pady=5)
 filter_entry.bind("<KeyRelease>", on_filter_change)
 
@@ -110,9 +110,9 @@ column_combobox = ttk.Combobox(root, width=80)
 column_combobox.grid(row=2, column=1, padx=5, pady=5)
 
 paste_button = tk.Button(root, text="Colar", command=paste_from_excel)
-paste_button.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
+paste_button.grid(row=3, column=2, columnspan=2, padx=5, pady=5)
 
 status_label = tk.Label(root, text="", fg="black")
-status_label.grid(row=3, column=2, columnspan=1, padx=5, pady=5)
+status_label.grid(row=3, column=1, columnspan=1, padx=5, pady=5)
 
 root.mainloop()
