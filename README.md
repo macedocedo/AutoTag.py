@@ -2,6 +2,7 @@
 
 Este código Python cria uma GUI usando o módulo tkinter. Ele permite ao usuário selecionar um arquivo Excel, filtrar dados de uma coluna desse arquivo e colar parte desses dados em outra parte da tela usando pyautogui. O usuário pode interagir com a interface gráfica para realizar essas ações de forma intuitiva.
 
+# Como funciona?
 
 -Seleção de Arquivo Excel:
 O usuário pode selecionar um arquivo Excel (.xlsx ou .xls) usando um botão de seleção.
