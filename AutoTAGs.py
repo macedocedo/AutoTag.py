@@ -26,7 +26,7 @@ def set_combobox_options(file_path):
         column_combobox['values'] = first_row_data
         workbook.close()
     except Exception as e:
-        status_label.config(text=f"Erro ao ler a primeira linha: {str(e)}", fg="red")
+        status_label.config(text=f"Erro ao coletar tabela: {str(e)}", fg="red")
         column_combobox['values'] = []
 
 def on_filter_change(*args):
@@ -84,7 +84,7 @@ def paste_from_excel():
                 break
 
         workbook.close()  
-        status_label.config(text="Colagem concluída!", fg="green")
+        status_label.config(text="Concluído!", fg="green")
     except Exception as e:
         status_label.config(text=f"Erro: {str(e)}", fg="red")
 
@@ -101,7 +101,7 @@ excel_file_entry.grid(row=0, column=1, padx=5, pady=5)
 filter_label = tk.Label(root, text="Filtro:")
 filter_label.grid(row=1, column=0, padx=5, pady=5)
 
-select_button = tk.Button(root, text="Selecionar", command=select_excel_file)
+select_button = tk.Button(root, text="Selecionar Arquivo", command=select_excel_file)
 select_button.grid(row=0, column=2, padx=5, pady=5)
 
 filter_label = tk.Label(root, text="Filtro:")
