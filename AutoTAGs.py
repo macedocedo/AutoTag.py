@@ -6,7 +6,6 @@ import pyautogui
 from time import sleep
 import subprocess
 
-
 def select_excel_file():
     file_path = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx;*.xls")])
     excel_file_entry.delete(0, tk.END)
