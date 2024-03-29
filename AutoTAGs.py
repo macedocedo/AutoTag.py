@@ -6,16 +6,18 @@ import pyautogui
 from time import sleep
 import subprocess
 
+# Função para selecionar um arquivo Excel
 def select_excel_file():
     file_path = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx;*.xls")])
     excel_file_entry.delete(0, tk.END)
     excel_file_entry.insert(0, file_path)
     set_combobox_options(file_path)
 
-#segundo codigo
+# Função para iniciar o Rastromouse.py em um processo separado
 def Rastromouse():
     subprocess.Popen(["python", "Rastromouse.py"])
 
+# Função para definir as opções da combobox com base no arquivo Excel selecionado
 def set_combobox_options(file_path):
     try:
         workbook = openpyxl.load_workbook(file_path)
@@ -29,6 +31,7 @@ def set_combobox_options(file_path):
         status_label.config(text=f"Erro ao coletar tabela: {str(e)}", fg="red")
         column_combobox['values'] = []
 
+# Função chamada quando o filtro é alterado
 def on_filter_change(*args):
     filter_text = filter_entry.get()
     if filter_text:
@@ -37,6 +40,7 @@ def on_filter_change(*args):
     else:
         set_combobox_options(excel_file_entry.get())
 
+# Função para colar dados do Excel
 def paste_from_excel():
     excel_file = excel_file_entry.get()
     if not excel_file:
@@ -88,6 +92,7 @@ def paste_from_excel():
     except Exception as e:
         status_label.config(text=f"Erro: {str(e)}", fg="red")
 
+# Configuração da interface gráfica
 root = tk.Tk()
 root.title("AutoTAGs")
 root.config(bg='#EDEDED')
