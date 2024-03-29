@@ -37,7 +37,8 @@ Um campo de rótulo na interface fornece feedback sobre o status das operações
 4-Código para auxiliar na localização de coordenadas.
 >Rastromouse
 
-![image](https://github.com/macedocedo/AutoTag/assets/84480587/9145d394-c706-4ecb-b077-90917a091165)
+![image](https://github.com/macedocedo/AutoTag/assets/84480587/f6ad5602-516d-4d68-999f-cb31bd83dd63)
+
 
 
 
