@@ -25,8 +25,19 @@ Um campo de rótulo na interface fornece feedback sobre o status das operações
 
 # Para instalar as bibliotecas necessárias
 
+Encontre o caminho para instalação das bibliotecas Python 
+C:\Users\mateus\AppData\Local\Programs\Python\Python312\Scripts
+![image](https://github.com/macedocedo/AutoTag.py/assets/84480587/b24c7c37-0c6a-4b3b-bce4-6d06b7c11a28)
+
+Na barra de pesquisa do mesmo campo onde o Python foi instalado, dentro da pasta "Scripts", digite "cmd" e aguarde a abertura do prompt de comando.
+
+![image](https://github.com/macedocedo/AutoTag.py/assets/84480587/54d5ee5e-527a-4abf-bf23-70af1c954682)
+
+> CMD
+Em seguida instale as seguintes bibliotecas no prompt de comando.
+
 1-tkinter
->pip install tk
+>pip install tkinter
 
 2-openpyxl:
 >pip install openpyxl
