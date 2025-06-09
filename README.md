@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 # Projeto AutoTag
 
 Este código Python cria uma GUI usando o módulo tkinter. Ele permite ao usuário selecionar um arquivo Excel, filtrar dados de uma coluna desse arquivo e colar parte desses dados em outra parte da tela usando pyautogui. O usuário pode interagir com a interface gráfica para realizar essas ações de forma intuitiva.
